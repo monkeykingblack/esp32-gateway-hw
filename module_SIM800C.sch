@@ -165,17 +165,6 @@ F 3 "" H 7000 4900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R15
-U 1 1 59DF4296
-P 4675 3600
-F 0 "R15" V 4755 3600 50  0000 C CNN
-F 1 "10k" V 4675 3600 50  0000 C CNN
-F 2 "footprint:R_0603" V 4605 3600 50  0001 C CNN
-F 3 "" H 4675 3600 50  0001 C CNN
-	1    4675 3600
-	0    1    1    0   
-$EndComp
-$Comp
 L R R14
 U 1 1 59DF4298
 P 4450 4900
@@ -398,11 +387,11 @@ Wire Wire Line
 Wire Wire Line
 	7625 4900 7525 4900
 Wire Wire Line
-	4950 3600 4825 3600
+	4525 3600 4950 3600
 Wire Wire Line
-	4525 3600 4375 3600
+	3900 3600 4125 3600
 Wire Wire Line
-	4375 3600 4375 3675
+	3900 3600 3900 3675
 Wire Wire Line
 	4600 4900 4950 4900
 Wire Wire Line
@@ -505,7 +494,7 @@ Text HLabel 4475 5450 3    60   Input ~ 0
 GND
 Text HLabel 2900 2450 0    60   Input ~ 0
 GND
-Text HLabel 4375 3675 3    60   Input ~ 0
+Text HLabel 3900 3675 3    60   Input ~ 0
 GND
 $Comp
 L SIM_Card-RESCUE-esp32-gateway-hw J?
@@ -520,4 +509,35 @@ F 3 "" H 9550 3400 50  0000 C CNN
 	1    9600 3400
 	1    0    0    -1  
 $EndComp
+$Comp
+L D_TVS D9
+U 1 1 59DD9C2C
+P 4700 3800
+F 0 "D9" H 4700 3900 50  0000 C CNN
+F 1 "D_TVS" H 4700 3700 50  0000 C CNN
+F 2 "footprint:DO-214AC(SMA)" H 4700 3800 50  0001 C CNN
+F 3 "" H 4700 3800 50  0001 C CNN
+	1    4700 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4700 3600 4700 3650
+$Comp
+L SW_Push SW1
+U 1 1 59DD9D26
+P 4325 3600
+F 0 "SW1" H 4375 3700 50  0000 L CNN
+F 1 "SW_Push" H 4325 3540 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_PUSH_6mm_h4.3mm" H 4325 3800 50  0001 C CNN
+F 3 "" H 4325 3800 50  0001 C CNN
+	1    4325 3600
+	1    0    0    -1  
+$EndComp
+Connection ~ 4700 3600
+Text HLabel 4550 4025 0    60   Input ~ 0
+GND
+Wire Wire Line
+	4700 3950 4700 4025
+Wire Wire Line
+	4700 4025 4550 4025
 $EndSCHEMATC
