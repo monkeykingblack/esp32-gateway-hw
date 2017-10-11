@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:esp32-gateway-hw-rescue
 LIBS:power
 LIBS:device
 LIBS:switches
@@ -34,10 +35,10 @@ LIBS:valves
 LIBS:esp32-wrover-v3
 LIBS:tc1264
 LIBS:neo-6m
-LIBS:SIM800C
 LIBS:smf05c
 LIBS:lm2596
 LIBS:mcp73831
+LIBS:SIM800C
 LIBS:esp32-gateway-hw-cache
 EELAYER 25 0
 EELAYER END
@@ -53,17 +54,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L SIM_Card J7
-U 1 1 59DF4288
-P 9600 3400
-F 0 "J7" H 9500 3900 50  0000 R CNN
-F 1 "SIM_Card" H 9550 3800 50  0000 R CNN
-F 2 "footprint:MOLEX_47553-2001_SIMCARD" H 9600 3750 50  0001 C CNN
-F 3 "" H 9550 3400 50  0000 C CNN
-	1    9600 3400
-	1    0    0    -1  
-$EndComp
 $Comp
 L SIM800C U5
 U 1 1 59DF4289
@@ -517,4 +507,17 @@ Text HLabel 2900 2450 0    60   Input ~ 0
 GND
 Text HLabel 4375 3675 3    60   Input ~ 0
 GND
+$Comp
+L SIM_Card-RESCUE-esp32-gateway-hw J?
+U 1 1 59DD9106
+P 9600 3400
+AR Path="/59DD9106" Ref="J?"  Part="1" 
+AR Path="/59DF3680/59DD9106" Ref="J?"  Part="1" 
+F 0 "J?" H 9500 3900 50  0000 R CNN
+F 1 "SIM_Card" H 9550 3800 50  0000 R CNN
+F 2 "" H 9600 3750 50  0000 C CNN
+F 3 "" H 9550 3400 50  0000 C CNN
+	1    9600 3400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

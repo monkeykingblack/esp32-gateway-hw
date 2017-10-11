@@ -1,6 +1,6 @@
 #ESP32-GATEWAY-HARDWARE
 
-#Features
+##Features
 
 - ESP32 WIFI, Bluetooth LE, SoC - 240MHz - Module ESP32 Wrover
 - Tracking location by GPS-NEO-6M IC
