@@ -879,8 +879,6 @@ NoConn ~ 3000 2600
 NoConn ~ 3000 2500
 NoConn ~ 3000 2400
 NoConn ~ 3000 2300
-NoConn ~ 3000 2200
-NoConn ~ 3000 2100
 NoConn ~ 3000 2000
 NoConn ~ 3000 1900
 $Comp
@@ -1315,4 +1313,12 @@ F 3 "" H 3800 4925 50  0001 C CNN
 	1    3800 4925
 	1    0    0    -1  
 $EndComp
+Text GLabel 2800 2100 0    60   Input ~ 0
+RXD-02
+Text GLabel 2800 2200 0    60   Input ~ 0
+TXD-02
+Wire Wire Line
+	2800 2200 3000 2200
+Wire Wire Line
+	2800 2100 3000 2100
 $EndSCHEMATC
