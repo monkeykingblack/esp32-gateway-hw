@@ -1,4 +1,4 @@
-update=Thứ tư, 11 Tháng mười Năm 2017 10:19:12 ICT
+update=Thứ ba, 17 Tháng mười Năm 2017 14:49:22 +07
 version=1
 last_client=kicad
 [pcbnew]
@@ -69,3 +69,4 @@ LibName37=lib/smf05c
 LibName38=lib/lm2596
 LibName39=lib/mcp73831
 LibName40=lib/SIM800C
+LibName41=lib/MCP1727-3302E_SN
