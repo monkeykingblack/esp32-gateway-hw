@@ -1,4 +1,4 @@
-update=Thứ ba, 17 Tháng mười Năm 2017 14:49:22 +07
+update=Thứ ba, 17 Tháng mười Năm 2017 22:58:31 +07
 version=1
 last_client=kicad
 [pcbnew]
@@ -70,3 +70,5 @@ LibName38=lib/lm2596
 LibName39=lib/mcp73831
 LibName40=lib/SIM800C
 LibName41=lib/MCP1727-3302E_SN
+LibName42=lib/MOSFET-N
+LibName43=lib/MOSFET-P

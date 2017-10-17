@@ -40,6 +40,8 @@ LIBS:lm2596
 LIBS:mcp73831
 LIBS:SIM800C
 LIBS:MCP1727-3302E_SN
+LIBS:MOSFET-N
+LIBS:MOSFET-P
 LIBS:esp32-gateway-hw-cache
 EELAYER 25 0
 EELAYER END
@@ -149,7 +151,7 @@ U 1 1 59DF4293
 P 7375 4900
 F 0 "D7" H 7375 5000 50  0000 C CNN
 F 1 "LED" H 7375 4800 50  0000 C CNN
-F 2 "footprint:R_0603" H 7375 4900 50  0001 C CNN
+F 2 "LEDs:LED_D3.0mm" H 7375 4900 50  0001 C CNN
 F 3 "" H 7375 4900 50  0001 C CNN
 	1    7375 4900
 	-1   0    0    1   
@@ -185,7 +187,7 @@ F 1 "LEMO2" H 3700 4750 50  0000 C CNN
 F 2 "footprint:SMA_Straight" H 3700 4950 50  0001 C CNN
 F 3 "" H 3700 4950 50  0001 C CNN
 	1    3700 4950
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 $Comp
 L C C17
@@ -279,10 +281,10 @@ F 3 "" H 4025 2200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR26
+L GND #PWR028
 U 1 1 59DF42A3
 P 4300 2425
-F 0 "#PWR26" H 4300 2175 50  0001 C CNN
+F 0 "#PWR028" H 4300 2175 50  0001 C CNN
 F 1 "GND" H 4300 2275 50  0000 C CNN
 F 2 "" H 4300 2425 50  0001 C CNN
 F 3 "" H 4300 2425 50  0001 C CNN
@@ -302,6 +304,117 @@ NoConn ~ 6750 4200
 NoConn ~ 6750 4100
 NoConn ~ 6750 4000
 NoConn ~ 6750 3600
+Text HLabel 4750 4300 0    60   Input ~ 0
+SIM_RXD
+Text HLabel 4750 4200 0    60   Input ~ 0
+SIM_TXD
+Text HLabel 4625 1525 1    60   Input ~ 0
+MICP
+Text HLabel 4525 1525 1    60   Input ~ 0
+MICN
+Text HLabel 4425 1525 1    60   Input ~ 0
+SPKP
+Text HLabel 4325 1525 1    60   Input ~ 0
+SPKN
+Text HLabel 6925 2500 1    60   Input ~ 0
+3.3V
+Text HLabel 7650 4225 3    60   Input ~ 0
+GND
+Text HLabel 7625 5100 3    60   Input ~ 0
+GND
+Text HLabel 6875 5100 3    60   Input ~ 0
+GND
+Text HLabel 4475 5450 3    60   Input ~ 0
+GND
+Text HLabel 2900 2450 0    60   Input ~ 0
+GND
+Text HLabel 3900 3675 3    60   Input ~ 0
+GND
+$Comp
+L SIM_Card-RESCUE-esp32-gateway-hw J?
+U 1 1 59DD9106
+P 9600 3400
+AR Path="/59DD9106" Ref="J?"  Part="1" 
+AR Path="/59DF3680/59DD9106" Ref="J7"  Part="1" 
+F 0 "J7" H 9500 3900 50  0000 R CNN
+F 1 "SIM_Card" H 9550 3800 50  0000 R CNN
+F 2 "footprint:MOLEX_47553-2001_SIMCARD" H 9600 3750 50  0001 C CNN
+F 3 "" H 9550 3400 50  0000 C CNN
+	1    9600 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_TVS D9
+U 1 1 59DD9C2C
+P 4700 3800
+F 0 "D9" H 4700 3900 50  0000 C CNN
+F 1 "D_TVS" H 4700 3700 50  0000 C CNN
+F 2 "footprint:DO-214AC(SMA)" H 4700 3800 50  0001 C CNN
+F 3 "" H 4700 3800 50  0001 C CNN
+	1    4700 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L SW_Push SW1
+U 1 1 59DD9D26
+P 4325 3600
+F 0 "SW1" H 4375 3700 50  0000 L CNN
+F 1 "SW_Push" H 4325 3540 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_PUSH_6mm_h4.3mm" H 4325 3800 50  0001 C CNN
+F 3 "" H 4325 3800 50  0001 C CNN
+	1    4325 3600
+	1    0    0    -1  
+$EndComp
+Text HLabel 4550 4025 0    60   Input ~ 0
+GND
+Text HLabel 7625 2325 1    60   Input ~ 0
+3.3V
+$Comp
+L C C24
+U 1 1 59E77FAA
+P 7625 2475
+F 0 "C24" H 7650 2575 50  0000 L CNN
+F 1 "100nF" H 7650 2375 50  0000 L CNN
+F 2 "footprint:C_0603" H 7663 2325 50  0001 C CNN
+F 3 "" H 7625 2475 50  0001 C CNN
+	1    7625 2475
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR029
+U 1 1 59E7800F
+P 7625 2625
+F 0 "#PWR029" H 7625 2375 50  0001 C CNN
+F 1 "GND" H 7625 2475 50  0000 C CNN
+F 2 "" H 7625 2625 50  0001 C CNN
+F 3 "" H 7625 2625 50  0001 C CNN
+	1    7625 2625
+	1    0    0    -1  
+$EndComp
+Text HLabel 7375 2325 1    60   Input ~ 0
+3.3V
+$Comp
+L C C23
+U 1 1 59E783BD
+P 7375 2475
+F 0 "C23" H 7400 2575 50  0000 L CNN
+F 1 "10uF" H 7400 2375 50  0000 L CNN
+F 2 "footprint:C_0603" H 7413 2325 50  0001 C CNN
+F 3 "" H 7375 2475 50  0001 C CNN
+	1    7375 2475
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR030
+U 1 1 59E783C3
+P 7375 2625
+F 0 "#PWR030" H 7375 2375 50  0001 C CNN
+F 1 "GND" H 7375 2475 50  0000 C CNN
+F 2 "" H 7375 2625 50  0001 C CNN
+F 3 "" H 7375 2625 50  0001 C CNN
+	1    7375 2625
+	1    0    0    -1  
+$EndComp
 Wire Notes Line
 	12150 1450 12150 1400
 Wire Wire Line
@@ -471,72 +584,9 @@ Wire Wire Line
 	4325 1950 3400 1950
 Wire Wire Line
 	4625 2700 4950 2700
-Text HLabel 4750 4300 0    60   Input ~ 0
-SIM_RXD
-Text HLabel 4750 4200 0    60   Input ~ 0
-SIM_TXD
-Text HLabel 4625 1525 1    60   Input ~ 0
-MICP
-Text HLabel 4525 1525 1    60   Input ~ 0
-MICN
-Text HLabel 4425 1525 1    60   Input ~ 0
-SPKP
-Text HLabel 4325 1525 1    60   Input ~ 0
-SPKN
-Text HLabel 6925 2500 1    60   Input ~ 0
-3.3V
-Text HLabel 7650 4225 3    60   Input ~ 0
-GND
-Text HLabel 7625 5100 3    60   Input ~ 0
-GND
-Text HLabel 6875 5100 3    60   Input ~ 0
-GND
-Text HLabel 4475 5450 3    60   Input ~ 0
-GND
-Text HLabel 2900 2450 0    60   Input ~ 0
-GND
-Text HLabel 3900 3675 3    60   Input ~ 0
-GND
-$Comp
-L SIM_Card-RESCUE-esp32-gateway-hw J?
-U 1 1 59DD9106
-P 9600 3400
-AR Path="/59DD9106" Ref="J?"  Part="1" 
-AR Path="/59DF3680/59DD9106" Ref="J7"  Part="1" 
-F 0 "J7" H 9500 3900 50  0000 R CNN
-F 1 "SIM_Card" H 9550 3800 50  0000 R CNN
-F 2 "footprint:MOLEX_47553-2001_SIMCARD" H 9600 3750 50  0001 C CNN
-F 3 "" H 9550 3400 50  0000 C CNN
-	1    9600 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L D_TVS D9
-U 1 1 59DD9C2C
-P 4700 3800
-F 0 "D9" H 4700 3900 50  0000 C CNN
-F 1 "D_TVS" H 4700 3700 50  0000 C CNN
-F 2 "footprint:DO-214AC(SMA)" H 4700 3800 50  0001 C CNN
-F 3 "" H 4700 3800 50  0001 C CNN
-	1    4700 3800
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	4700 3600 4700 3650
-$Comp
-L SW_Push SW1
-U 1 1 59DD9D26
-P 4325 3600
-F 0 "SW1" H 4375 3700 50  0000 L CNN
-F 1 "SW_Push" H 4325 3540 50  0000 C CNN
-F 2 "Buttons_Switches_THT:SW_PUSH_6mm_h4.3mm" H 4325 3800 50  0001 C CNN
-F 3 "" H 4325 3800 50  0001 C CNN
-	1    4325 3600
-	1    0    0    -1  
-$EndComp
 Connection ~ 4700 3600
-Text HLabel 4550 4025 0    60   Input ~ 0
-GND
 Wire Wire Line
 	4700 3950 4700 4025
 Wire Wire Line
