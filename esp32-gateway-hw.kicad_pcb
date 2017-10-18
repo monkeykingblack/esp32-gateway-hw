@@ -1777,6 +1777,11 @@
       (net 2 GND))
     (pad 1 thru_hole circle (at 0 0 270) (size 2 2) (drill 1.5) (layers *.Cu *.Mask)
       (net 8 "Net-(C17-Pad1)"))
+    (model ${KIPRJMOD}/lib/3D/sma_90_r300.124.403.wrl
+      (at (xyz 0 0.16 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
   )
 
   (module footprint:MOLEX_47553-2001_SIMCARD (layer F.Cu) (tedit 57C050E0) (tstamp 59E5C620)
@@ -1870,6 +1875,11 @@
       (net 2 GND))
     (pad 1 thru_hole circle (at 0 0 90) (size 2 2) (drill 1.5) (layers *.Cu *.Mask)
       (net 51 "Net-(J8-Pad1)"))
+    (model ${KIPRJMOD}/lib/3D/sma_90_r300.124.403.wrl
+      (at (xyz 0 -0.16 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module footprint:INDUCTOR_SMD_DIP2 (layer F.Cu) (tedit 0) (tstamp 59E5C656)
@@ -2535,7 +2545,7 @@
       (net 13 "Net-(D2-Pad2)"))
     (model ${KIPRJMOD}/lib/3D/LED_D3.0mm.wrl
       (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
+      (scale (xyz 0.393701 0.393701 0.393701))
       (rotate (xyz 0 0 0))
     )
   )
