@@ -1,4 +1,4 @@
-update=Thứ ba, 17 Tháng mười Năm 2017 22:58:31 +07
+update=Thứ tư, 18 Tháng mười Năm 2017 21:33:23 +07
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=
@@ -72,3 +70,5 @@ LibName40=lib/SIM800C
 LibName41=lib/MCP1727-3302E_SN
 LibName42=lib/MOSFET-N
 LibName43=lib/MOSFET-P
+[general]
+version=1
