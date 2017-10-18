@@ -393,7 +393,7 @@ U 1 1 59DD1267
 P 6900 3250
 F 0 "J4" H 6900 3450 50  0000 C CNN
 F 1 "Conn_01x04" H 6900 2950 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x04_Pitch1.27mm" H 6900 3250 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm" H 6900 3250 50  0001 C CNN
 F 3 "" H 6900 3250 50  0001 C CNN
 	1    6900 3250
 	-1   0    0    1   
@@ -513,7 +513,7 @@ U 1 1 59DD17F9
 P 10250 3100
 F 0 "J5" H 10250 3400 50  0000 C CNN
 F 1 "Conn_01x05" H 10250 3500 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x05_Pitch1.27mm" H 10250 3100 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x05_Pitch2.54mm" H 10250 3100 50  0001 C CNN
 F 3 "" H 10250 3100 50  0001 C CNN
 	1    10250 3100
 	-1   0    0    1   
@@ -755,7 +755,7 @@ U 1 1 59DFA1D8
 P 3175 6950
 F 0 "J3" H 3175 7150 50  0000 C CNN
 F 1 "Conn_01x04" H 3175 6650 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x04_Pitch1.27mm" H 3175 6950 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm" H 3175 6950 50  0001 C CNN
 F 3 "" H 3175 6950 50  0001 C CNN
 	1    3175 6950
 	1    0    0    -1  
@@ -847,7 +847,7 @@ U 1 1 59E633F2
 P 9600 4525
 F 0 "U4" H 9423 5042 50  0000 L BNN
 F 1 "MCP1727-3302E/SN" H 9412 3662 50  0000 L BNN
-F 2 "footprint:SOIC127P490X175-8N" H 9600 4525 50  0001 L BNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 9600 4525 50  0001 L BNN
 F 3 "MCP1727 Series 1.5 A 3.3 V Fixed Output Surface Mount LDO Regulator - SOIC-8" H 9600 4525 50  0001 L BNN
 F 4 "Microchip" H 9600 4525 50  0001 L BNN "MF"
 F 5 "MCP1727-3302E/SN-ND" H 9600 4525 50  0001 L BNN "Digi-Key_Part_Number"
